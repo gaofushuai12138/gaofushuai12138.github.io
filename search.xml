@@ -3,9 +3,8 @@
   <entry>
     <title>用Gogs搭建自己的专属仓库</title>
     <url>/2020/01/27/gogs/</url>
-    <content><![CDATA[<p>#背景概述<br>   作为一名程序员，工作中少不了将日常工作的代码传到github上，有些代码我们并不想将其公开，但是github的私有化需要支付额外的费用，所以这时候Gogs的出现就很好的为我们解决了这一问题。</p>
-<p>##Gogs简介</p>
-<ol>
+    <content><![CDATA[<h1 id="背景概述"><a href="#背景概述" class="headerlink" title="背景概述"></a>背景概述</h1><p>   作为一名程序员，工作中少不了将日常工作的代码传到github上，有些代码我们并不想将其公开，但是github的私有化需要支付额外的费用，所以这时候Gogs的出现就很好的为我们解决了这一问题。</p>
+<h2 id="Gogs简介"><a href="#Gogs简介" class="headerlink" title="Gogs简介"></a>Gogs简介</h2><ol>
 <li>gogs是一款极易搭建的自助 Git 服务, 掌握了它, 我们就可以搭建自己的git服务站点</li>
 <li>gogs官网: <a href="https://gogs.io/github" target="_blank" rel="noopener">https://gogs.io/github</a></li>
 <li>中文地址:<a href="https://github.com/gogs/gogs/blob/master/README_ZH.md" target="_blank" rel="noopener">https://github.com/gogs/gogs/blob/master/README_ZH.md</a></li>
