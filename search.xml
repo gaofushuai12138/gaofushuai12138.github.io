@@ -1,11 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>用Gogs搭建自己的专属仓库</title>
+    <url>/2020/01/27/gogs/</url>
+    <content><![CDATA[<p>#背景概述<br>   作为一名程序员，工作中少不了将日常工作的代码传到github上，有些代码我们并不想将其公开，但是github的私有化需要支付额外的费用，所以这时候Gogs的出现就很好的为我们解决了这一问题。</p>
+<p>##Gogs简介</p>
+<ol>
+<li>gogs是一款极易搭建的自助 Git 服务, 掌握了它, 我们就可以搭建自己的git服务站点</li>
+<li>gogs官网: <a href="https://gogs.io/github" target="_blank" rel="noopener">https://gogs.io/github</a></li>
+<li>中文地址:<a href="https://github.com/gogs/gogs/blob/master/README_ZH.md" target="_blank" rel="noopener">https://github.com/gogs/gogs/blob/master/README_ZH.md</a></li>
+</ol>
+<h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><ol>
+<li>centos7   </li>
+<li>mysql</li>
+<li>docker</li>
+</ol>
+<p>在此之前我们需要对docker的基础命令有一些基本的了解：</p>
+<h5 id="docker命令补充"><a href="#docker命令补充" class="headerlink" title="docker命令补充:"></a>docker命令补充:</h5><p>docker run : 运行容器</p>
+<p>–name:  给容器取个新名字</p>
+<p>-d ： 后台运行</p>
+<p>-p  :   将容器中的端口号与真机中的端口号做一个映射</p>
+<h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><h3 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">通过yum安装docker</span></span><br><span class="line">yum -y install docker</span><br><span class="line"><span class="meta">#</span><span class="bash">启动docker</span></span><br><span class="line">systemctl start docker</span><br><span class="line"><span class="meta">#</span><span class="bash">开机自启</span></span><br><span class="line">systemctl enable dockeer</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="下载gogs的docker镜像"><a href="#下载gogs的docker镜像" class="headerlink" title="下载gogs的docker镜像"></a>下载gogs的docker镜像</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker pull gogs/gogs</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="创建gogs存储目录"><a href="#创建gogs存储目录" class="headerlink" title="创建gogs存储目录"></a>创建gogs存储目录</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir -p /var/gogs</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="在后台运行gogs"><a href="#在后台运行gogs" class="headerlink" title="在后台运行gogs"></a>在后台运行gogs</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run --name=gogs -d  -p 10022:22 -p 10080:3000 -v /var/gogs:/data gogs/gogs</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="部署mysql"><a href="#部署mysql" class="headerlink" title="部署mysql"></a>部署mysql</h2><p>由于我的服务器上原先就安装了mysql,因此就不做过多赘述。关于mysql在服务器上的安装，可以自行了解一下宝塔Linux面板，装mysql特别的方便~</p>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><ul>
+<li><p>由于自己安装界面已经无法访问，于是从网上找的图片~</p>
+<p><img src="/images/page_1.jpg" alt="此图片无法访问"></p>
+<p>按照图片内容填写参数</p>
+<p><img src="/images/page_2.jpg" alt=""></p>
+<p>图片中配置的是sqllite，mysql也是一样的，首先保证你的mysql数据库是可以远程访问的，然后再按照图片上的要求填写数据库的主机号和端口号即可。</p>
+</li>
+</ul>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p> 初见gogs, 我就被吸引到了, gogs功能强大, 设置简单, 完全开源, 对中文支持也很好, 如果你想建立自己的git站点, 而运维的经验又不怎么丰富, gogs是一个不错的选择~</p>
+]]></content>
+      <categories>
+        <category>gogs</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>仓库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第一篇博客</title>
     <url>/2020/01/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h1 id="技术博客"><a href="#技术博客" class="headerlink" title="技术博客"></a>技术博客</h1><h3 id="专注于技术分享"><a href="#专注于技术分享" class="headerlink" title="专注于技术分享~"></a>专注于技术分享~</h3>]]></content>
       <categories>
-        <category>全栈</category>
+        <category>categories</category>
       </categories>
       <tags>
         <tag>技术</tag>
