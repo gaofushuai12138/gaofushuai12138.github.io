@@ -8,6 +8,25 @@
 
 <p>packgename : 需要下载包的名称</p>
 <p>url : 国内镜像源的地址</p>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><h3 id="windows下更换国内镜像源"><a href="#windows下更换国内镜像源" class="headerlink" title="windows下更换国内镜像源"></a>windows下更换国内镜像源</h3><ul>
+<li>进入C:/Users/用户名/，在此目录下创建 <strong>pip</strong> 文件夹 </li>
+<li>在 <strong>pip</strong> 目录下创建 <strong>pip.ini</strong> 文件, 内容如下</li>
+</ul>
+<blockquote>
+<p>[global] </p>
+<p>timeout = 6000</p>
+<p>index-url = <a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a> </p>
+<p>trusted-host = <a href="http://pypi.tuna.tsinghua.edu.cn/" target="_blank" rel="noopener">pypi.tuna.tsinghua.edu.cn</a> </p>
+</blockquote>
+<h3 id="Linux下更换镜像源"><a href="#Linux下更换镜像源" class="headerlink" title="Linux下更换镜像源"></a>Linux下更换镜像源</h3><ul>
+<li>修改 <strong>~/.pip/pip.conf</strong> 文件, 没有则创建</li>
+</ul>
+<blockquote>
+<p>[global] </p>
+<p>timeout = 6000</p>
+<p>index-url = <a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a> </p>
+<p>trusted-host = <a href="http://pypi.tuna.tsinghua.edu.cn/" target="_blank" rel="noopener">pypi.tuna.tsinghua.edu.cn</a> </p>
+</blockquote>
 <h2 id="国内镜像源地址"><a href="#国内镜像源地址" class="headerlink" title="国内镜像源地址"></a>国内镜像源地址</h2><ul>
 <li><a href="https://pypi.tuna.tsinghua.edu.cn/simple/" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple/</a>       清华大学</li>
 <li><a href="http://mirrors.aliyun.com/pypi/simple/" target="_blank" rel="noopener">http://mirrors.aliyun.com/pypi/simple/</a>             阿里云</li>
