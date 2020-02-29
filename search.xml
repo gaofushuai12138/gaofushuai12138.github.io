@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>python学习之路01</title>
+    <title>记录npm下载依赖时的一些坑</title>
+    <url>/2020/02/29/%E8%AE%B0%E5%BD%95vue-cli%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%9D%91/</url>
+    <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>   帮小伙伴本地部署nodejs项目时，小伙伴发现自己的项目启动不了,查看了一下终端发现报如下错误:</p>
+<p><img src="/images/page3.png" alt="此图片无法访问"></p>
+<p>经过把包删了重下，用yarn下依赖包等一系列操作以后，问题总算得到了解决。</p>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">rm -rf node_modules</span><br><span class="line">npm cache clean -f      // 清除npm缓存</span><br><span class="line">cnpm install</span><br></pre></td></tr></table></figure>
+
+<p>当node_modules 出现某一些包错误时候，查不到原因时候，可以适当的清除缓存试试。删掉重新安装</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>-Vue -npm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决pip下载速度慢的问题</title>
     <url>/2020/02/08/python-learn/</url>
-    <content><![CDATA[<h1 id="pip3下载速度慢的问题"><a href="#pip3下载速度慢的问题" class="headerlink" title="pip3下载速度慢的问题"></a>pip3下载速度慢的问题</h1><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>用国内镜像源代替</p>
+    <content><![CDATA[<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>用国内镜像源代替</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip3 install packgename -i url</span><br></pre></td></tr></table></figure>
 
 <p>packgename : 需要下载包的名称</p>
