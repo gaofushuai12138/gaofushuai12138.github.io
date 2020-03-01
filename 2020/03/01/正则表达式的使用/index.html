@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="高大帅的博客">
 <meta property="og:description" content="定义正则表示式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特殊字符，及这些特殊字符的组合，组成一个“规则字符串”，这个“规则字符串”用来表达对字符串的一种过滤逻辑。 常用规则   模式 描述    \w 匹配字母数字及下划线   \W 匹配非字母数字下划线   \s 匹配空白字符,等价于{\t\n\r\f}   \S 匹配任意非空字符   \d 匹配任意数字，等价于{0-9}   \D 匹">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-01T07:21:32.775Z">
+<meta property="og:updated_time" content="2020-03-01T07:22:52.473Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -519,7 +519,7 @@
 
 <h2 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">content = <span class="string">"price is $5.00"</span></span><br><span class="line">result = re.match(<span class="string">'price is \$5\.00'</span>,content)</span><br></pre></td></tr></table></figure>
 
-<h2 id="RE的常用方法"><a href="#RE的常用方法" class="headerlink" title="RE的常用方法"></a>RE的常用方法</h2><p><strong>re.search</strong></p>
+<h1 id="RE的常用方法"><a href="#RE的常用方法" class="headerlink" title="RE的常用方法"></a>RE的常用方法</h1><p><strong>re.search</strong></p>
 <p>re.search扫描整个字符串并返回第一个成功的匹配</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">content = <span class="string">"hello1234567 world_this is a regex demo extra stings"</span></span><br><span class="line">res = re.search(<span class="string">"he.*?\d+.*?demo$"</span>,content)</span><br></pre></td></tr></table></figure>
 
@@ -599,6 +599,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/03/01/beatifulsoup/" rel="prev" title="BeatifulSoup的使用">
+                BeatifulSoup的使用 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -682,7 +686,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -693,7 +697,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -753,7 +757,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用规则"><span class="nav-number">2.</span> <span class="nav-text">常用规则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#匹配规则"><span class="nav-number">3.</span> <span class="nav-text">匹配规则</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#最常规的匹配"><span class="nav-number">3.1.</span> <span class="nav-text">最常规的匹配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#泛匹配"><span class="nav-number">3.2.</span> <span class="nav-text">泛匹配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#匹配目标"><span class="nav-number">3.3.</span> <span class="nav-text">匹配目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#贪婪模式"><span class="nav-number">3.4.</span> <span class="nav-text">贪婪模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非贪婪模式"><span class="nav-number">3.5.</span> <span class="nav-text">非贪婪模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#匹配模式"><span class="nav-number">3.6.</span> <span class="nav-text">匹配模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转义"><span class="nav-number">3.7.</span> <span class="nav-text">转义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RE的常用方法"><span class="nav-number">3.8.</span> <span class="nav-text">RE的常用方法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用规则"><span class="nav-number">2.</span> <span class="nav-text">常用规则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#匹配规则"><span class="nav-number">3.</span> <span class="nav-text">匹配规则</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#最常规的匹配"><span class="nav-number">3.1.</span> <span class="nav-text">最常规的匹配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#泛匹配"><span class="nav-number">3.2.</span> <span class="nav-text">泛匹配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#匹配目标"><span class="nav-number">3.3.</span> <span class="nav-text">匹配目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#贪婪模式"><span class="nav-number">3.4.</span> <span class="nav-text">贪婪模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非贪婪模式"><span class="nav-number">3.5.</span> <span class="nav-text">非贪婪模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#匹配模式"><span class="nav-number">3.6.</span> <span class="nav-text">匹配模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转义"><span class="nav-number">3.7.</span> <span class="nav-text">转义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#RE的常用方法"><span class="nav-number">4.</span> <span class="nav-text">RE的常用方法</span></a></li></ol></div>
             
 
           </div>
