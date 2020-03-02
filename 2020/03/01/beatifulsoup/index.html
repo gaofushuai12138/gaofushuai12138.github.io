@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="BeatifulSoup简介灵活又方便的解析网页解析库，处理高效，支持多种解析器。 利用它不用编写正则表达式即可方便地实现网页信息的提取。 BeatifulSoup主要解析器 BeatifulSoup演示案例aa.html demo.py 参考链接http:&#x2F;&#x2F;www.jsphp.net&#x2F;python&#x2F;show-24-214-1.html">
+<meta name="description" content="BeatifulSoup简介灵活又方便的解析网页解析库，处理高效，支持多种解析器。 利用它不用编写正则表达式即可方便地实现网页信息的提取。 BeatifulSoup主要解析器 BeatifulSoup演示案例aa.html demo.py BeatifulSoup4的四大种类BeautifulSoup4将复杂HTML文档转换成一个复杂的树形结构,每个节点都是Python对象,所有对象可以归纳为4种">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BeatifulSoup的使用">
 <meta property="og:url" content="http:&#x2F;&#x2F;www.baidu.com&#x2F;2020&#x2F;03&#x2F;01&#x2F;beatifulsoup&#x2F;index.html">
 <meta property="og:site_name" content="高大帅的博客">
-<meta property="og:description" content="BeatifulSoup简介灵活又方便的解析网页解析库，处理高效，支持多种解析器。 利用它不用编写正则表达式即可方便地实现网页信息的提取。 BeatifulSoup主要解析器 BeatifulSoup演示案例aa.html demo.py 参考链接http:&#x2F;&#x2F;www.jsphp.net&#x2F;python&#x2F;show-24-214-1.html">
+<meta property="og:description" content="BeatifulSoup简介灵活又方便的解析网页解析库，处理高效，支持多种解析器。 利用它不用编写正则表达式即可方便地实现网页信息的提取。 BeatifulSoup主要解析器 BeatifulSoup演示案例aa.html demo.py BeatifulSoup4的四大种类BeautifulSoup4将复杂HTML文档转换成一个复杂的树形结构,每个节点都是Python对象,所有对象可以归纳为4种">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http:&#x2F;&#x2F;www.baidu.com&#x2F;images&#x2F;page4.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;www.baidu.com&#x2F;images&#x2F;page5.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;www.baidu.com&#x2F;images.page6.png">
-<meta property="og:updated_time" content="2020-03-02T02:31:20.718Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;www.baidu.com&#x2F;images&#x2F;page6.png">
+<meta property="og:updated_time" content="2020-03-02T03:19:02.692Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;www.baidu.com&#x2F;images&#x2F;page4.png">
 
@@ -392,8 +392,53 @@
 <p>利用它不用编写正则表达式即可方便地实现网页信息的提取。</p>
 <h1 id="BeatifulSoup主要解析器"><a href="#BeatifulSoup主要解析器" class="headerlink" title="BeatifulSoup主要解析器"></a>BeatifulSoup主要解析器</h1><p><img src="/images/page4.png" alt="此图片不可显示"></p>
 <h1 id="BeatifulSoup演示案例"><a href="#BeatifulSoup演示案例" class="headerlink" title="BeatifulSoup演示案例"></a>BeatifulSoup演示案例</h1><h2 id="aa-html"><a href="#aa-html" class="headerlink" title="aa.html"></a>aa.html</h2><p><img src="/images/page5.png" alt="此图片不可显示"></p>
-<h2 id="demo-py"><a href="#demo-py" class="headerlink" title="demo.py"></a>demo.py</h2><p><img src="/images.page6.png" alt="此图片不可显示"></p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://www.jsphp.net/python/show-24-214-1.html" target="_blank" rel="noopener">http://www.jsphp.net/python/show-24-214-1.html</a></p>
+<h2 id="demo-py"><a href="#demo-py" class="headerlink" title="demo.py"></a>demo.py</h2><p><img src="/images/page6.png" alt="此图片不可显示"></p>
+<h1 id="BeatifulSoup4的四大种类"><a href="#BeatifulSoup4的四大种类" class="headerlink" title="BeatifulSoup4的四大种类"></a>BeatifulSoup4的四大种类</h1><p>BeautifulSoup4将复杂HTML文档转换成一个复杂的树形结构,每个节点都是Python对象,所有对象可以归纳为4种:</p>
+<ul>
+<li><p><strong>Tag</strong>                 </p>
+<blockquote>
+<p>通俗的讲就是HTML里的标签，可以利用soup加标签名轻松获得标签的内容，但是查找的内容是第一个符合要求的标签</p>
+<p>属性:name、attrs</p>
+</blockquote>
+</li>
+<li><p><strong>NavigableString</strong></p>
+<blockquote>
+<p>标签的文字部分的内容，用.string获取</p>
+</blockquote>
+</li>
+<li><p><strong>BeautifulSoup</strong></p>
+<blockquote>
+<p>表示一个文档的内容</p>
+</blockquote>
+</li>
+<li><p><strong>Comment</strong></p>
+<blockquote>
+<p>特殊类型的NavigableString 对象，其输出的内容不包括注释符号。 </p>
+</blockquote>
+</li>
+</ul>
+<h1 id="遍历文档树"><a href="#遍历文档树" class="headerlink" title="遍历文档树"></a>遍历文档树</h1><ul>
+<li><strong>.contents：</strong> 获取Tag的所有子节点，返回一个list</li>
+<li><strong>.children:</strong>  获取Tag的所有子节点，返回一个生成器</li>
+<li><strong>.descendants</strong>：获取Tag的所有子孙节点 </li>
+<li><strong>.strings：</strong>如果Tag包含多个字符串，即在子孙节点中有内容，可以用此获取，而后进行遍历 </li>
+<li><strong>.stripped_strings：</strong>与strings用法一致，只不过可以去除掉那些多余的空白内容 </li>
+<li><strong>.parent：</strong>获取Tag的父节点 </li>
+<li><strong>.previous_sibling：</strong>获取当前Tag的上一个节点，属性通常是字符串或空白，真实结果是当前标签与上一个标签之间的顿号和换行符 </li>
+<li><strong>.next_sibling：</strong>获取当前Tag的下一个节点，属性通常是字符串或空白，真是结果是当前标签与下一个标签之间的顿号与换行符 </li>
+<li><strong>.previous_siblings：</strong>获取当前Tag的上面所有的兄弟节点，返回一个生成器 </li>
+<li><strong>.next_siblings：</strong>获取当前Tag的下面所有的兄弟节点，返回一个生成器 </li>
+<li><strong>.previous_element：</strong>获取解析过程中上一个被解析的对象(字符串或tag)，可能与previous_sibling相同，但通常是不一样的 </li>
+<li><strong>.next_element：</strong>获取解析过程中下一个被解析的对象(字符串或tag)，可能与next_sibling相同，但通常是不一样的 </li>
+<li><strong>.previous_elements：</strong>返回一个生成器，可以向前访问文档的解析内容 </li>
+<li><strong>.next_elements：</strong>返回一个生成器，可以向后访问文档的解析内容 </li>
+<li><strong>.has_attr：</strong>判断Tag是否包含属性 </li>
+</ul>
+<h1 id="搜索文档树"><a href="#搜索文档树" class="headerlink" title="搜索文档树"></a>搜索文档树</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">file = open(<span class="string">'./aa.html'</span>,<span class="string">'rb'</span>)</span><br><span class="line">html = file.read()</span><br><span class="line">bs = BeautifulSoup(html,<span class="string">'html.parser'</span>)</span><br><span class="line"><span class="comment"># name参数</span></span><br><span class="line">a_list = bs.find_all(<span class="string">"a"</span>)</span><br><span class="line">print(a_list)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果传入的是正则，则会根据search()来匹配内容</span></span><br><span class="line">print(<span class="string">"================================================================================="</span>)</span><br><span class="line">t_list = bs.find_all(re.compile(<span class="string">"a"</span>))</span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> t_list:</span><br><span class="line">    print(item)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果是传入一个列表,将会与列表中的任意元素匹配到的结点返回</span></span><br><span class="line">print(<span class="string">"================================================================================="</span>)</span><br><span class="line">s_list = bs.find_all([<span class="string">"meta"</span>,<span class="string">"link"</span>])</span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> s_list:</span><br><span class="line">    print(item)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 传入方法</span></span><br><span class="line">print(<span class="string">"=================================================================================="</span>)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">name_is_exists</span><span class="params">(tag)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> tag.has_attr(<span class="string">"a"</span>)</span><br><span class="line">f_list = bs.find_all(name_is_exists)</span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> file:</span><br><span class="line">    print(item)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 传入kwargs参数</span></span><br><span class="line">print(<span class="string">"==================================================================================="</span>)</span><br><span class="line">g_list = bs.find_all(id = <span class="string">"head"</span>)</span><br><span class="line">print(g_list)</span><br><span class="line"></span><br><span class="line">re_list = bs.find_all(href = <span class="string">"http://news.baidu.com"</span>)</span><br><span class="line">print(re_list)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询所有包含class的Tag</span></span><br><span class="line">class_list = bs.find_all(class_ = <span class="literal">True</span>)</span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> class_list:</span><br><span class="line">    print(item)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># arrrs参数</span></span><br><span class="line"><span class="comment"># 对html的data_*属性进行搜索时，</span></span><br><span class="line">data_list = bs.find_all(attrs=&#123;<span class="string">"data-foo"</span>:<span class="string">"value"</span>&#125;)</span><br><span class="line">print(data_list)</span><br><span class="line"></span><br><span class="line"><span class="comment"># text参数</span></span><br><span class="line">text1_list = bs.find_all(text=<span class="string">"hao123"</span>)</span><br><span class="line">print(text1_list)</span><br><span class="line"></span><br><span class="line">text2_list = bs.find_all(text=[<span class="string">"hao123"</span>,<span class="string">"地图"</span>,<span class="string">"贴吧"</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment">#搜索text的特殊场景时</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">length_is_two</span><span class="params">(text)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> text <span class="keyword">and</span> len(text) == <span class="number">2</span></span><br><span class="line"></span><br><span class="line">fun_list = bs.find_all(text=length_is_two)</span><br><span class="line">print(fun_list)</span><br><span class="line"></span><br><span class="line"><span class="comment"># limit参数，限制返回的数量</span></span><br><span class="line">limit_list = bs.find_all(<span class="string">"a"</span>,limit=<span class="number">2</span>)</span><br><span class="line">print(limit_list)</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="css选择器"><a href="#css选择器" class="headerlink" title="css选择器"></a>css选择器</h1><p>通过bs.select()方法选取具有对应样式的元素</p>
 
       
     </div>
@@ -605,7 +650,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#BeatifulSoup简介"><span class="nav-number">1.</span> <span class="nav-text">BeatifulSoup简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BeatifulSoup主要解析器"><span class="nav-number">2.</span> <span class="nav-text">BeatifulSoup主要解析器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BeatifulSoup演示案例"><span class="nav-number">3.</span> <span class="nav-text">BeatifulSoup演示案例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#aa-html"><span class="nav-number">3.1.</span> <span class="nav-text">aa.html</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#demo-py"><span class="nav-number">3.2.</span> <span class="nav-text">demo.py</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">3.3.</span> <span class="nav-text">参考链接</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#BeatifulSoup简介"><span class="nav-number">1.</span> <span class="nav-text">BeatifulSoup简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BeatifulSoup主要解析器"><span class="nav-number">2.</span> <span class="nav-text">BeatifulSoup主要解析器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BeatifulSoup演示案例"><span class="nav-number">3.</span> <span class="nav-text">BeatifulSoup演示案例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#aa-html"><span class="nav-number">3.1.</span> <span class="nav-text">aa.html</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#demo-py"><span class="nav-number">3.2.</span> <span class="nav-text">demo.py</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BeatifulSoup4的四大种类"><span class="nav-number">4.</span> <span class="nav-text">BeatifulSoup4的四大种类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#遍历文档树"><span class="nav-number">5.</span> <span class="nav-text">遍历文档树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搜索文档树"><span class="nav-number">6.</span> <span class="nav-text">搜索文档树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#css选择器"><span class="nav-number">7.</span> <span class="nav-text">css选择器</span></a></li></ol></div>
             
 
           </div>
