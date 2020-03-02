@@ -5,6 +5,9 @@
     <url>/2020/03/01/beatifulsoup/</url>
     <content><![CDATA[<h1 id="BeatifulSoup简介"><a href="#BeatifulSoup简介" class="headerlink" title="BeatifulSoup简介"></a>BeatifulSoup简介</h1><p>灵活又方便的解析网页解析库，处理高效，支持多种解析器。</p>
 <p>利用它不用编写正则表达式即可方便地实现网页信息的提取。</p>
+<h1 id="BeatifulSoup主要解析器"><a href="#BeatifulSoup主要解析器" class="headerlink" title="BeatifulSoup主要解析器"></a>BeatifulSoup主要解析器</h1><p><img src="/images/page4.png" alt="此图片不可显示"></p>
+<h1 id="BeatifulSoup演示案例"><a href="#BeatifulSoup演示案例" class="headerlink" title="BeatifulSoup演示案例"></a>BeatifulSoup演示案例</h1><h2 id="aa-html"><a href="#aa-html" class="headerlink" title="aa.html"></a>aa.html</h2><p><img src="/images/page5.png" alt="此图片不可显示"></p>
+<h2 id="demo-py"><a href="#demo-py" class="headerlink" title="demo.py"></a>demo.py</h2><p><img src="/images.page6.png" alt="此图片不可显示"></p>
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://www.jsphp.net/python/show-24-214-1.html" target="_blank" rel="noopener">http://www.jsphp.net/python/show-24-214-1.html</a></p>
 ]]></content>
       <categories>
