@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Selenium用法详解</title>
+    <url>/2020/03/07/Selenium/</url>
+    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>selenium 是一个用于Web应用程序测试的工具。Selenium测试直接运行在浏览器中，就像真正的用户在操作一样。支持的浏览器包括IE（7, 8, 9, 10, 11），Mozilla Firefox，Safari，Google Chrome，Opera等。这个工具的主要功能包括：测试与浏览器的兼容性——测试你的应用程序看是否能够很好得工作在不同浏览器和操作系统之上。测试系统功能——创建回归测试检验软件功能和用户需求。支持自动录制动作和自动生成 .Net、Java、Perl等不同语言的测试脚本。 </p>
+<p>自动化测试工具，支持多种浏览器</p>
+<p>selenium用于爬虫，主要是用来解决javascript渲染的问题 </p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+  </entry>
+  <entry>
     <title>BeatifulSoup的使用</title>
     <url>/2020/03/01/beatifulsoup/</url>
     <content><![CDATA[<h1 id="BeatifulSoup简介"><a href="#BeatifulSoup简介" class="headerlink" title="BeatifulSoup简介"></a>BeatifulSoup简介</h1><p>灵活又方便的解析网页解析库，处理高效，支持多种解析器。</p>
